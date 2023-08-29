@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sneakers",
+  "info": {
+    "singularName": "sneaker",
+    "pluralName": "sneakers",
+    "displayName": "Sneaker",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 35,
+      "unique": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "starRating": {
+      "type": "integer",
+      "required": true,
+      "max": 5,
+      "min": 0
+    },
+    "photo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "sneakerID": {
+      "type": "uid",
+      "required": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": false
+    },
+    "sneakerStats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stats.stats",
+      "required": true
+    }
+  }
+}

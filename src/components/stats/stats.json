@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_stats_stats",
+  "info": {
+    "displayName": "stats",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "integer",
+      "max": 100,
+      "required": true,
+      "min": 0
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import path from 'path';
 
 export default ({ env }) => {
+  console.log("🚀 ~ file: database.ts:4 ~ env:", env)
   const client = env('DATABASE_CLIENT', 'postgres');
 
   const connections = {
